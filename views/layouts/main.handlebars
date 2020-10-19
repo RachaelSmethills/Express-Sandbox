@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+        <header>
+            <a href="/" >
+                <img class="logo" src="pokemon-131979013310232399.png"> 
+                </img>
+            </a>
+            
+
+            <ul>
+                <li><a href="/bulbasaur">Bulabasaur</a></li>
+                <li><a href="/squirtle">Squirtle</a></li>
+                <li><a href="/charmander">Charmander</a></li>
+            </ul>
+        </header>
+        <section class="banner"></section>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0)
+            })
+        </script>
+        <div class="container">
+            <div class="content">
+                {{{body}}}
+            </div>
+        </div>
+
+
+    </body>
+</html>
